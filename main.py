@@ -91,7 +91,7 @@ def predefined_commands(message):
 					elif date.today().weekday() == 3:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n11:40 - 13:00 - ооп\n13:05 - 14:25 - ооп", reply_to_message_id = message.message_id)
 					elif date.today().weekday() == 4:
-						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n08:30 - 09:50 - компьютерная схемотехника\n10:00 - 11:20 - компьютерная схемотехника", reply_to_message_id = message.message_id)
+						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n08:30 - 09:50 - комп. схем.\n10:00 - 11:20 - комп. схем.", reply_to_message_id = message.message_id)
 				elif message.from_user.id in second_group.values():
 					if date.today().weekday() == 0:
 						if message.from_user.id in first_group_eng.values():
@@ -105,7 +105,7 @@ def predefined_commands(message):
 					elif date.today().weekday() == 3:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n13:05 - 14:25 - ооп", reply_to_message_id = message.message_id)
 					elif date.today().weekday() == 4:
-						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n10:00 - 11:20 - компьютерная схемотехника\n13:05 - 14:25 - компьютерная схемотехника", reply_to_message_id = message.message_id)
+						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n10:00 - 11:20 - комп. схем.\n13:05 - 14:25 - комп. схем.", reply_to_message_id = message.message_id)
 				elif message.from_user.id not in all_students.values():
 					bot.send_message(message.chat.id, "вряд ли ты здесь учишься", reply_to_message_id = message.message_id)
 		elif "завтра" in message.text and "вчера" not in message.text and "сегодня" not in message.text:
@@ -123,7 +123,7 @@ def predefined_commands(message):
 					elif date.today().weekday() + 1 == 3:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + tomorrow + ")" + "\n\n11:40 - 13:00 - ооп\n13:05 - 14:25 - ооп", reply_to_message_id = message.message_id)
 					elif date.today().weekday() + 1 == 4:
-						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + tomorrow + ")" + "\n\n08:30 - 09:50 - компьютерная схемотехника\n10:00 - 11:20 - компьютерная схемотехника", reply_to_message_id = message.message_id)
+						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + tomorrow + ")" + "\n\n08:30 - 09:50 - комп. схем.\n10:00 - 11:20 - комп. схем.", reply_to_message_id = message.message_id)
 					elif date.today().weekday() + 1 == 5:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + tomorrow + ")" + "\n\nпар нет", reply_to_message_id = message.message_id)
 					elif date.today().weekday() + 1 == 6:
@@ -141,7 +141,7 @@ def predefined_commands(message):
 					elif date.today().weekday() + 1 == 3:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + tomorrow + ")" + "\n\n13:05 - 14:25 - ооп", reply_to_message_id = message.message_id)
 					elif date.today().weekday() + 1 == 4:
-						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + tomorrow + ")" + "\n\n10:00 - 11:20 - компьютерная схемотехника\n13:05 - 14:25 - компьютерная схемотехника", reply_to_message_id = message.message_id)
+						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + tomorrow + ")" + "\n\n10:00 - 11:20 - комп. схем.\n13:05 - 14:25 - комп. схем.", reply_to_message_id = message.message_id)
 					elif date.today().weekday() + 1 == 5:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + tomorrow + ")" + "\n\nпар нет", reply_to_message_id = message.message_id)
 					elif date.today().weekday() + 1 == 6:
@@ -163,7 +163,7 @@ def predefined_commands(message):
 					elif date.today().weekday() - 1 == 3:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + yesterday + ")" + "\n\n11:40 - 13:00 - ооп\n13:05 - 14:25 - ооп", reply_to_message_id = message.message_id)
 					elif date.today().weekday() - 1 == 4:
-						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + yesterday + ")" + "\n\n08:30 - 09:50 - компьютерная схемотехника\n10:00 - 11:20 - компьютерная схемотехника", reply_to_message_id = message.message_id)
+						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + yesterday + ")" + "\n\n08:30 - 09:50 - комп. схем.\n10:00 - 11:20 - комп. схем.", reply_to_message_id = message.message_id)
 					elif date.today().weekday() - 1 == 5:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + yesterday + ")" + "\n\nпар нет", reply_to_message_id = message.message_id)
 					elif date.today().weekday() - 1 == 6:
@@ -181,7 +181,7 @@ def predefined_commands(message):
 					elif date.today().weekday() - 1 == 3:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + yesterday + ")" + "\n\n13:05 - 14:25 - ооп", reply_to_message_id = message.message_id)
 					elif date.today().weekday() - 1 == 4:
-						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + yesterday + ")" + "\n\n10:00 - 11:20 - компьютерная схемотехника\n13:05 - 14:25 - компьютерная схемотехника", reply_to_message_id = message.message_id)
+						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + yesterday + ")" + "\n\n10:00 - 11:20 - комп. схем.\n13:05 - 14:25 - комп. схем.", reply_to_message_id = message.message_id)
 					elif date.today().weekday() - 1 == 5:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + yesterday + ")" + "\n\nпар нет", reply_to_message_id = message.message_id)
 					elif date.today().weekday() - 1 == 6:
@@ -203,7 +203,7 @@ def predefined_commands(message):
 					elif date.today().weekday() == 3  and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "пятница" not in message.text and "суббота" not in message.text and "воскресенье" not in message.text:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n11:40 - 13:00 - ооп\n13:05 - 14:25 - ооп", reply_to_message_id = message.message_id)
 					elif date.today().weekday() == 4  and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "пятница" not in message.text and "суббота" not in message.text and "воскресенье" not in message.text:
-						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n08:30 - 09:50 - компьютерная схемотехника\n10:00 - 11:20 - компьютерная схемотехника", reply_to_message_id = message.message_id)
+						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n08:30 - 09:50 - комп. схем.\n10:00 - 11:20 - комп. схем.", reply_to_message_id = message.message_id)
 					if "понедельник" in message.text or "пн" in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "пятница" not in message.text and "суббота" not in message.text and "воскресенье" not in message.text and "среду" not in message.text and "пятницу" not in message.text and "субботу" not in message.text:
 						if message.from_user.id in first_group_eng.values():
 							bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (понедельник)\n\n10:00 - 11:20 - вычисл. мат.\n11:40 - 13:00 - англ. яз.", reply_to_message_id = message.message_id)
@@ -216,7 +216,7 @@ def predefined_commands(message):
 					elif "четверг" in message.text or "чт" in message.text and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "пятница" not in message.text and "суббота" not in message.text and "воскресенье" not in message.text and "среду" not in message.text and "пятницу" not in message.text and "субботу" not in message.text:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (четверг)\n\n11:40 - 13:00 - ооп\n13:05 - 14:25 - ооп", reply_to_message_id = message.message_id)
 					elif "пятница" in message.text or "пятницу" in message.text or "пт" in message.text and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "суббота" not in message.text and "воскресенье" not in message.text and "среду" not in message.text and "субботу" not in message.text:
-						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (пятница)\n\n08:30 - 09:50 - компьютерная схемотехника\n10:00 - 11:20 - компьютерная схемотехника", reply_to_message_id = message.message_id)
+						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (пятница)\n\n08:30 - 09:50 - комп. схем.\n10:00 - 11:20 - комп. схем.", reply_to_message_id = message.message_id)
 					elif "суббота" in message.text or "субботу" in message.text or "сб" in message.text and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "пятница" not in message.text and "воскресенье" not in message.text and "среду" not in message.text and "пятницу" not in message.text:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (суббота)\n\nпар нет", reply_to_message_id = message.message_id)
 					elif "воскресенье" in message.text or "вс" in message.text and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "пятница" not in message.text and "суббота" not in message.text and "среду" not in message.text and "пятницу" not in message.text and "субботу" not in message.text:
@@ -234,7 +234,7 @@ def predefined_commands(message):
 					elif date.today().weekday() == 3 and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "пятница" not in message.text and "суббота" not in message.text and "воскресенье" not in message.text:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n13:05 - 14:25 - ооп", reply_to_message_id = message.message_id)
 					elif date.today().weekday() == 4 and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "пятница" not in message.text and "суббота" not in message.text and "воскресенье" not in message.text:
-						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n10:00 - 11:20 - компьютерная схемотехника\n13:05 - 14:25 - компьютерная схемотехника", reply_to_message_id = message.message_id)
+						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (" + today + ")" "\n\n10:00 - 11:20 - комп. схем.\n13:05 - 14:25 - комп. схем.", reply_to_message_id = message.message_id)
 					if "понедельник" in message.text or "пн" in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "пятница" not in message.text and "суббота" not in message.text and "воскресенье" not in message.text and "среду" not in message.text and "пятницу" not in message.text and "субботу" not in message.text:
 						if message.from_user.id in first_group_eng.values():
 							bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (понедельник)\n\n10:00 - 11:20 - вычисл. мат.\n11:40 - 13:00 - англ. яз.", reply_to_message_id = message.message_id)
@@ -247,7 +247,7 @@ def predefined_commands(message):
 					elif "четверг" in message.text or "чт" in message.text and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "пятница" not in message.text and "суббота" not in message.text and "воскресенье" not in message.text and "среду" not in message.text and "пятницу" not in message.text and "субботу" not in message.text:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (четверг)\n\n13:05 - 14:25 - ооп", reply_to_message_id = message.message_id)
 					elif "пятница" in message.text or "пятницу" in message.text or "пт" in message.text and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "суббота" not in message.text and "воскресенье" not in message.text and "среду" not in message.text and "субботу" not in message.text:
-						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (пятница)\n\n10:00 - 11:20 - компьютерная схемотехника\n13:05 - 14:25 - компьютерная схемотехника", reply_to_message_id = message.message_id)
+						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (пятница)\n\n10:00 - 11:20 - комп. схем.\n13:05 - 14:25 - комп. схем.", reply_to_message_id = message.message_id)
 					elif "суббота" in message.text or "субботу" in message.text or "сб" in message.text and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "пятница" not in message.text and "воскресенье" not in message.text and "среду" not in message.text and "пятницу" not in message.text:
 						bot.send_message(message.chat.id, student_name + ", " + student_group + " группа" + " (суббота)\n\nпар нет", reply_to_message_id = message.message_id)
 					elif "воскресенье" in message.text or "вс" in message.text and "понедельник" not in message.text and "вторник" not in message.text and "среда" not in message.text and "четверг" not in message.text and "пятница" not in message.text and "суббота" not in message.text and "среду" not in message.text and "пятницу" not in message.text and "субботу" not in message.text:
@@ -257,9 +257,9 @@ def predefined_commands(message):
 		if "schedule" in message.text:
 			if message.from_user.id in first_group.values():
 				if message.from_user.id in first_group_eng.values():
-					bot.send_message(message.chat.id, student_group + " группа" + " / " + week + " неделя" + "\n\nпонедельник\n10:00 - 11:20 - вычисл. мат.\n11:40 - 13:00 - англ. яз.\n\nвторник\nпар нет\n\nсреда\n11:40 - 13:00 - теор. вер.\n13:05 - 14:25 - теор. вер.\n\nчетверг\n11:40 - 13:00 - ооп\n13:05 - 14:25 - ооп\n\nпятница\n08:30 - 09:50 - компьютерная схемотехника\n10:00 - 11:20 - компьютерная схемотехника")
+					bot.send_message(message.chat.id, student_group + " группа" + " / " + week + " неделя" + "\n\nпонедельник\n10:00 - 11:20 - вычисл. мат.\n11:40 - 13:00 - англ. яз.\n\nвторник\nпар нет\n\nсреда\n11:40 - 13:00 - теор. вер.\n13:05 - 14:25 - теор. вер.\n\nчетверг\n11:40 - 13:00 - ооп\n13:05 - 14:25 - ооп\n\nпятница\n08:30 - 09:50 - комп. схем.\n10:00 - 11:20 - комп. схем.")
 				elif message.from_user.id in second_group_eng.values():
-					bot.send_message(message.chat.id, student_group + " группа" + " / " + week + " неделя" + "\n\nпонедельник\n10:00 - 11:20 - вычисл. мат.\n13:05 - 14:25 - англ. яз.\n\nвторник\nпар нет\n\nсреда\n11:40 - 13:00 - теор. вер.\n13:05 - 14:25 - теор. вер.\n\nчетверг\n11:40 - 13:00 - ооп\n13:05 - 14:25 - ооп\n\nпятница\n10:00 - 11:20 - компьютерная схемотехника\n13:05 - 14:25 - компьютерная схемотехника")
+					bot.send_message(message.chat.id, student_group + " группа" + " / " + week + " неделя" + "\n\nпонедельник\n10:00 - 11:20 - вычисл. мат.\n13:05 - 14:25 - англ. яз.\n\nвторник\nпар нет\n\nсреда\n11:40 - 13:00 - теор. вер.\n13:05 - 14:25 - теор. вер.\n\nчетверг\n11:40 - 13:00 - ооп\n13:05 - 14:25 - ооп\n\nпятница\n10:00 - 11:20 - комп. схем.\n13:05 - 14:25 - комп. схем.")
 			elif message.from_user.id in second_group.values():
 				if message.from_user.id in first_group_eng.values():
 					bot.send_message(message.chat.id, student_group + " группа" + " / " + week + " неделя" + "\n\nпонедельник\n08:30 - 09:50 - вычисл. мат.\n10:00 - 11:20 - вычисл. мат.\n11:40 - 13:00 - англ. яз.\n\nвторник\nпар нет\n\nсреда\n11:40 - 13:00 - теор. вер.\n13:05 - 14:25 - теор. вер.\n\nчетверг\n13:05 - 14:25 - ооп\n\nпятница\n13:05 - 14:25 - ооп\n14:30 - 15:50 - ооп")
